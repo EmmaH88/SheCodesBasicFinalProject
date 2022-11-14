@@ -17,7 +17,7 @@
       h1 {
         color: #fd9234;
         text-align: center;
-        font-size: 70px;
+        font-size: 60px;
         text-decoration: underline;
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         font-weight: 450;
@@ -26,23 +26,24 @@
         padding: 10px 5px;
       }
       h2 {
-        text-shadow: 13px -7px 13px rgba(251, 177, 114, 0.9);
+        text-shadow: 13px -7px 13px rgba(251, 177, 114, 0.6);
         color: #fbb172;
         text-align: center;
         font-size: 40px;
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        line-height: 4ch;
+        line-height: 1.5;
         margin: 0 auto;
-        padding: 5px 5px;
+        padding: 5px;
       }
       h4 {
+        text-align: center;
         color: rgba(251, 177, 114, 0.9);
         font-size: 30px;
         text-decoration: underline;
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       }
       img {
-        width: 500px;
+        width: 400px;
         display: block;
         text-align: center;
         margin: 50px auto 0 auto;
@@ -129,13 +130,18 @@
 
     <button>Sugar Skulls</button>
 
+    <div>
+      Coded by <br />
+      Emma H 🤩
+    </div>
+
     <script>
       function sugarSkulls() {
         let name = prompt("What is your first name?");
 
         let question = prompt("Do You Like Sugar Skulls too?");
 
-        if (question === "Yes") {
+        if (question === "yes" || "Yes") {
           alert("Thank you, " + name + "🌹💀");
         } else {
           alert("Sorry to hear that " + name + "🙈🙊");
@@ -145,9 +151,5 @@
       let button = document.querySelector("button");
       button.addEventListener("click", sugarSkulls);
     </script>
-    <footer>
-      Coded by <br />
-      Emma H 🤩
-    </footer>
   </body>
 </html>
